@@ -1,0 +1,196 @@
+
+
+.contacthead{
+  font-family: 'Inter';
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #565C69;
+  text-align: center;
+  
+}
+
+.contact-info {
+  display: flex;
+  width: 30%;
+ 
+  flex-direction: column;
+  text-align: center;
+  
+  margin-bottom: 20px;
+  border: 2px solid orange;
+  box-shadow: 15px 15px 0 rgba(124, 1, 255, 0.3);
+  border-radius: 50px;
+}
+
+.contact-info div {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-info h2 {
+  color: #303237;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.contact-info i{
+  padding-right: 10px;
+}
+
+.contact-info p {
+  color: #303237;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.contact-info a {
+  color: #303237;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 22px;
+}
+
+
+ /* * {
+  margin: 0;
+  padding: 0;
+  border-style: border-box;
+} */
+
+
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  
+}
+
+.card {
+  width: 50%;
+  height: 68vh;
+ 
+  padding: 30px 60px 60px 60px;
+  border: 2px solid orange;
+  box-shadow: 15px 15px 0 rgba(124, 1, 255, 0.3);
+  border-radius: 50px;
+  position: relative;
+  margin-left: 90px;
+}
+
+.card h2 {
+  color: rgba(0, 0, 0, 0.799);
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.card .row {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid: auto / auto auto;
+  grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+  grid-gap: 30px;
+}
+
+.card .row .col {
+  position: relative;
+  width: 100%;
+  margin: 30px 20px 40px 0;
+  transition: 0.5s;
+}
+
+.card .row .form-group {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #0f0f0f;
+}
+
+.card .row .form-group input,
+.card .row .form-group textarea {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 0 10px 20px;
+  border: 2px solid orange;
+  box-shadow: 5px 5px 0 rgba(124, 1, 255, 0.3);
+  color: #565C69;
+  border-radius: 50px;
+}
+
+.card .row .form-group label {
+  line-height: 40px;
+  color: #393c44;
+  font-size: 24px;
+  font-family: 'Inter';
+  font-weight: 600;
+  margin: 0 0 0 30px;
+  display: block;
+  pointer-events: none;
+}
+
+.row .col:nth-child(6) {
+  margin-top: 64px;
+}
+
+.card .row .form-group input:focus,
+.card .row .form-group textarea:focus {
+  border: 3px solid #FA762B;
+  box-shadow: 8px 8px 0 rgba(36, 0, 109, 0.758);
+  transition: all 0.5s;
+}
+
+.card .row input[type="submit"] {
+  border: 3px solid orange;
+  box-shadow: 8px 8px 0 rgba(124, 1, 255, 0.3);
+  padding: 10px;
+  height: 100%;
+  width: 50%;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  text-transform: uppercase;
+  color: #0e0d0d;
+  line-height: 40px;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 45px;
+  transition: all 0.4s;
+}
+
+.card .row input[type="submit"]:hover {
+  border: 5px solid #FA762B;
+  box-shadow: 8px 8px 0 rgba(124, 1, 255, 0.3);
+  background-color: #FA762B;
+  color: #f6f4f4;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+  .card .row {
+    grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
+  }
+  
+  .card {
+    padding: 20px;
+  }
+  
+  .card h2 {
+    font-size: 34px;
+  }
+  
+  .card .row input[type="submit"] {
+    width: 100%;
+  }
+}

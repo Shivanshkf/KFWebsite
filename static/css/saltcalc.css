@@ -1,0 +1,202 @@
+.saltcalc{
+  margin-top: 100px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.saltleftsec{
+  font-family: 'Inter';
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.salthead{
+  font-family: 'Inter';
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #303237;
+  margin: 0;
+  padding: 0;
+}
+
+.saltinputhead{
+  font-family: 'Inter';
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #7E8494;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  position: relative;
+  
+}
+
+.input-group input[type="text"] {
+  padding: 8px;
+  padding-right: 80px; /* Make space for the unit and line */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.unit-container {
+  position: absolute;
+  right: 5px; /* Adjusted spacing */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.vertical-line {
+  background-color: #ddd; /* Make line more visible */
+  width: 1px;
+  height: 30px; /* Adjusted height */
+  margin-right: 5px; /* Adjusted spacing */
+}
+
+.horizontal-line {
+  background-color: #ddd; /* Make line more visible */
+  width: 1px;
+  height: 300px; /* Adjusted height */
+  margin-left: 50px; /* Adjusted spacing */
+}
+
+.unit {
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #434447;
+  padding: 0 5px; /* Adjusted padding */
+  pointer-events: none; /* Ensures clicks go through to the input field */
+}
+
+.para{
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #434447;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.horizontal-line {
+  background-color: #ddd; /* Make line more visible */
+  width: 1px;
+  height: 350px; /* Adjusted height */
+  margin-left: 40px; /* Adjusted spacing */
+}
+
+.saltrightsec{
+  width: 42%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.lefthead{
+  font-family: 'Inter';
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #303237;
+  margin: 0;
+  padding: 0;
+}
+
+#result{
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #805cf8; 
+}
+.rightp{
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-family: 'Inter';
+  font-weight: 1000;
+  color: #434447;
+}
+
+.saltbut {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.saltbut a {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 0;
+    background: #b29aff;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    font-family: 'Inter';
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+}
+
+.saltbut i{
+  margin-left: 10px;
+}
+.saltbut a:hover {
+  box-shadow:rgba(0, 0, 0, 0.249) 0px 4px 4px 0px;
+    background: #242331;
+    color: #ffffff;
+}
+
+@media (max-width: 500px) {
+  .saltcalc{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+  .saltleftsec{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .horizontal-line {
+    display: none;
+  }
+  .salthead{
+    line-height: 40px;
+  }
+  .saltrightsec{
+    width: 90%;
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  .saltcalc{
+    display: flex;
+    flex-direction: column;
+  }
+  .saltleftsec{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .horizontal-line {
+    display: none;
+  }
+  .saltrightsec{
+    width: 90%;
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+  
+}

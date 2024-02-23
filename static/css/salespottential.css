@@ -1,0 +1,526 @@
+.sales {
+  margin-top: 70px;
+  margin-left: 30px;
+}
+
+.upsec {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.upleftsec {
+  font-family: 'Inter';
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0;
+  width: 45%;
+}
+
+.uprightsec {
+  font-family: 'Inter';
+  background-color: #ffffff;
+  margin-left: 100px;
+  width: 50%;
+}
+
+.storehead1 {
+  font-family: 'Inter';
+  font-size: 1rem;
+  font-weight: 700;
+  color: #565C69;
+  margin-bottom: -12px;
+
+}
+
+.storehead2 {
+  font-family: 'Inter';
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #303237;
+
+}
+
+.downsaleshead {
+  margin-top: 100px;
+}
+
+.salesinput {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputhead {
+  font-family: 'Inter';
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #7E8494;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+/* new input */
+.cal-input {
+  max-width: 420px;
+  margin-top: 2vw;
+}
+
+.cal-input label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Inter';
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #7E8494;
+}
+
+.input-group {
+  position: relative;
+
+}
+
+.input-group input[type="text"] {
+  padding: 8px;
+  padding-right: 80px;
+  /* Make space for the unit and line */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.unit-container {
+  position: absolute;
+  right: 5px;
+  /* Adjusted spacing */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.vertical-line {
+  background-color: #ddd;
+  /* Make line more visible */
+  width: 1px;
+  height: 30px;
+  /* Adjusted height */
+  margin-right: 5px;
+  /* Adjusted spacing */
+}
+
+.horizontal-line {
+  background-color: #ddd;
+  /* Make line more visible */
+  width: 1px;
+  height: 300px;
+  /* Adjusted height */
+  margin-left: 50px;
+  /* Adjusted spacing */
+}
+
+.unit {
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #434447;
+  padding: 0 5px;
+  /* Adjusted padding */
+  pointer-events: none;
+  /* Ensures clicks go through to the input field */
+}
+#storeSize{
+  font-weight: 500;
+}
+#monthlySales{
+  font-weight: 500;
+}
+
+/* input end */
+
+
+.radio-container {
+  margin: 8px 0;
+}
+
+.radio-container label {
+  font-family: 'Inter';
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #131415;
+  display: block;
+}
+
+.radiop {
+  font-family: 'Inter';
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 2px;
+}
+
+.radio-option i {
+  font-size: 0.8rem;
+  margin-right: 10px;
+  /* Adjust the value as needed */
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  background-color: #E5E7EF;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.radio-option-tier {
+  display: flex;
+  align-items: center;
+  padding: 7px 15px;
+  border: 1px solid #ccc;
+  background-color: #E5E7EF;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.radio-option:hover {
+  background-color: #502dc4;
+  /* Change to desired hover background color */
+  color: #ffffff;
+}
+
+.radio-option.selected {
+  background-color: #502dc4;
+  color: white;
+  /* border-color: #0000005e; */
+
+
+}
+
+.storehead3 {
+  font-family: 'Inter';
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #565C69;
+
+
+}
+
+.table {
+  width: 90%;
+  margin-top: 8px;
+  border-collapse: collapse;
+  padding-bottom: 50px;
+  font-size: 1rem;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+th {
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+th:first-child,
+td:first-child {
+  width: 100%;
+}
+
+th:last-child,
+td:last-child {
+  width: 10%;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.quote-container {
+  width: 100%;
+  margin-top: 20px;
+  text-align: left;
+}
+
+
+.quote-text {
+  max-width: 90%;
+  /* Make sure the text does not exceed the border */
+  box-sizing: border-box;
+  font-family: 'Inter';
+  font-size: 1.4rem;
+  font-weight: 1000;
+  color: #3b1aa8;
+}
+
+/* Media Query */
+@media only screen and (max-width: 768px) {
+  .upsec {
+    flex-direction: column;
+  }
+
+  .uprightsec {
+    margin-left: 0;
+    margin-top: -50px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .upleftsec {
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  .storehead1 {
+    font-size: 1.2rem;
+
+  }
+
+  .storehead2 {
+    font-size: 2.3rem;
+  }
+
+  .inputhead {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .input-group input[type="text"] {
+    padding: 14px;
+    font-size: 1.2rem;
+  }
+
+  .radio-container label {
+    font-size: 1rem;
+  }
+
+  .radio-option i {
+    font-size: 1rem;
+    margin-right: 10px;
+    /* Adjust the value as needed */
+  }
+
+  .storehead3 {
+    font-family: 'Inter';
+    font-size: 2rem;
+  }
+
+  .table {
+    font-size: 1.2rem;
+  }
+
+  .quote-container {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Adjust font sizes for smaller screens */
+@media only screen and (max-width: 480px) {
+  .upleftsec {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .storehead1 {
+    font-size: 0.8rem;
+  }
+
+  .storehead2 {
+    font-size: 1.8rem;
+  }
+
+  .inputhead {
+    font-size: 1.1rem;
+  }
+
+  .radiop i {
+    display: none;
+    /* Hide Font Awesome icons */
+  }
+
+  .radio-group {
+    gap: 20px;
+  }
+
+  .radiop {
+    padding: 3px;
+  }
+
+  .uprightsec {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+@media only screen and (max-width: 390px) {
+  .upleftsec {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .storehead1 {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .storehead2 {
+    font-size: 1.8rem;
+  }
+
+  .storehead3 {
+    font-size: 1.7rem;
+  }
+
+  .inputhead {
+    font-size: 1rem;
+  }
+
+  .input-group input[type="text"] {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .radiop i {
+    display: none;
+    /* Hide Font Awesome icons */
+  }
+
+  .radio-group {
+    gap: 20px;
+  }
+
+  .radiop {
+    padding: 2px;
+    font-size: 0.8rem;
+  }
+
+  .uprightsec {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .table {
+    font-size: 0.9rem;
+  }
+
+  .quote-container {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .upleftsec {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .storehead1 {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .storehead2 {
+    font-size: 1.8rem;
+  }
+
+  .storehead3 {
+    font-size: 1.7rem;
+  }
+
+  .inputhead {
+    font-size: 1rem;
+  }
+
+  .input-group input[type="text"] {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .radiop i {
+    display: none;
+    /* Hide Font Awesome icons */
+  }
+
+  .radio-group {
+    gap: 20px;
+  }
+
+  .radiop {
+    padding: 2px;
+    font-size: 0.7rem;
+  }
+
+  .uprightsec {
+    width: 98%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .table {
+    font-size: 0.9rem;
+  }
+
+  .quote-container {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .upleftsec {
+    width: 90%;
+    margin-top: 50px;
+  }
+  .table {
+    font-size: 0.9rem;
+  }
+  .storehead3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .upleftsec {
+    width: 90%;
+    margin-top: 40px;
+  }
+  .downsaleshead{
+    margin-top: 30px;
+  }
+  .table {
+    font-size: 0.9rem;
+  }
+  .storehead3 {
+    font-size: 1.6rem;
+  }
+}

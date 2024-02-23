@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de7c20493d.js" crossorigin="anonymous"></script>
+<style>
+    .sales{
+  margin-top: 70px;
+  margin-left: 30px;
+}
+
+.upsec{
+  display: flex;
+  flex-direction: row;
+  
+}
+.upleftsec{
+  font-family: 'Inter';
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0;
+  width: 45%;
+}
+
+.uprightsec{
+  font-family: 'Inter';
+  background-color: #ffffff;
+  margin-left: 100px;
+  width: 50%;
+}
+
+.storehead1{
+  font-family: 'Inter';
+  font-size: 1rem;
+  font-weight: 700;
+  color: #565C69;
+  margin-bottom: -12px;
+  
+}
+
+.storehead2{
+  font-family: 'Inter';
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #303237;
+  
+}
+.downsaleshead{
+  margin-top: 100px;
+}
+
+.salesinput{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputhead{
+  font-family: 'Inter';
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #7E8494;
+  margin: 0;
+  padding-bottom: 10px; 
+}
+
+/* new input */
+.cal-input {
+  max-width: 420px;
+  margin-top: 2vw; 
+}
+
+.cal-input label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Inter';
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #7E8494;
+}
+
+.input-group {
+  position: relative;
+  
+}
+
+.input-group input[type="text"] {
+  padding: 8px;
+  padding-right: 80px; /* Make space for the unit and line */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.unit-container {
+  position: absolute;
+  right: 5px; /* Adjusted spacing */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.vertical-line {
+  background-color: #ddd; /* Make line more visible */
+  width: 1px;
+  height: 30px; /* Adjusted height */
+  margin-right: 5px; /* Adjusted spacing */
+}
+
+.horizontal-line {
+  background-color: #ddd; /* Make line more visible */
+  width: 1px;
+  height: 300px; /* Adjusted height */
+  margin-left: 50px; /* Adjusted spacing */
+}
+
+.unit {
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #434447;
+  padding: 0 5px; /* Adjusted padding */
+  pointer-events: none; /* Ensures clicks go through to the input field */
+}
+/* input end */
+
+
+.radio-container {
+  margin: 8px 0;
+}
+
+.radio-container label {
+  font-family: 'Inter';
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #131415;
+  display: block;
+}
+
+.radiop{
+  font-family: 'Inter';
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 2px;
+}
+
+.radio-option i {
+  font-size: 0.8rem;
+  margin-right: 10px; /* Adjust the value as needed */
+}
+.radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  background-color: #E5E7EF;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.radio-option-tier {
+  display: flex;
+  align-items: center;
+  padding: 7px 15px;
+  border: 1px solid #ccc;
+  background-color: #E5E7EF;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.radio-option:hover {
+  background-color: #FA762B; /* Change to desired hover background color */
+  color: #ffffff;
+}
+
+.radio-option.selected {
+  background-color: #FA762B;
+  color: white;
+  /* border-color: #0000005e; */
+ 
+  
+}
+
+.storehead3{
+  font-family: 'Inter';
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #565C69;
+  
+  
+}
+
+.table {
+  width: 90%;
+  margin-top: 8px;
+  border-collapse: collapse;
+  padding-bottom: 50px;
+  font-size: 1rem;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+th {
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+th:first-child,
+td:first-child {
+  width: 100%;
+}
+
+th:last-child,
+td:last-child {
+  width: 10%;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.quote-container {
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+}
+
+
+.quote-text {
+  max-width: 90%; /* Make sure the text does not exceed the border */
+  box-sizing: border-box;
+  font-family: 'Inter';
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #FA762B;
+}
+
+@media only screen and (max-width: 768px) {
+            .upsec {
+                flex-direction: column;
+            }
+
+            .uprightsec {
+                margin-left: 0;
+                margin-top: -50px;
+                padding: 20px;
+                width: 100%;
+            }
+            .upleftsec {
+                width: 70%;
+            }
+            .storehead1 {
+                font-size: 1.2rem;
+                margin-bottom: -29px;
+            }
+
+            .storehead2 {
+                font-size: 2.3rem;
+            }
+
+            .inputhead {
+                font-size: 1.5rem;
+                margin-top: 10px;
+            }
+
+            .input-group {
+                width: 100%;
+            }
+            .input-group input[type="text"] {
+                padding: 14px;
+                font-size: 1.2rem;
+            }
+            .radio-container label {
+                font-size: 1rem;
+            }
+            .radio-option i {
+                font-size: 1rem;
+                margin-right: 10px; /* Adjust the value as needed */
+            }
+            .storehead3{
+                font-family: 'Inter';
+                font-size: 2rem;
+            }
+            .table{
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Adjust font sizes for smaller screens */
+        @media only screen and (max-width: 480px) {
+            .upleftsec {
+                width: 90%;
+                margin: 0;
+                padding: 0;
+            }
+            .storehead1 {
+                font-size: 0.8rem;
+            }
+
+            .storehead2 {
+                font-size: 1.8rem;
+            }
+
+            .inputhead {
+                font-size: 1.1rem;
+            }
+            .radiop i {
+                display: none; /* Hide Font Awesome icons */
+            }
+            .radio-group {
+                gap: 20px;
+            }
+            .radiop{
+                padding: 3px;
+            }
+            .uprightsec {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+        }
+
+</style>
+<body>
+<!-- main body content -->
+<section class="sales">
+    <div class="upsec">
+      <div class="upleftsec">
+        <div class="saleshead">
+          <h3 class="storehead1">GET TO KNOW YOUR</h3>
+          <h1 class="storehead2">Sales Pottential</h1>
+        </div>
+        <div class="salesinput">
+          <label class="inputhead" for="storeSize">Store Size (Sq. Ft.)
+          </label>
+          <div class="input-group">
+            <input type="text" id="storeSize" placeholder="e.g 5,000">
+            <span class="unit-container">
+              <span class="vertical-line"></span>
+              <span class="unit">Sq. Ft.</span>
+            </span>
+          </div>
+          <!-- City Category Options -->
+          <div class="radio-container" id="cityCategory">
+            <p class="inputhead">City Category :</p>
+            <div class="radio-group">
+              <div class="radio-option" data-value="High Street"><span class="radiop"><i class="fa fa-university"
+                    aria-hidden="true"></i> High Street</span></div>
+              <div class="radio-option" data-value="Residential"><span class="radiop"><i class="fa fa-building-o"
+                    aria-hidden="true"></i> Residential</span></div>
+              <div class="radio-option" data-value="Low rent area"><span class="radiop"><i class="fa fa-home"
+                    aria-hidden="true"></i> Low Rent</span></div>
+            </div>
+          </div>
+
+          <!-- City Tier Options -->
+          <div class="radio-container" id="cityTier">
+            <p class="inputhead">City Tier :</p>
+            <div class="radio-group">
+              <label class="radio-option" data-value="Tier1">
+                <span class="radiop"><i class="fa-regular fa-circle-check"></i> Tier 1</span>
+              </label>
+              <label class="radio-option" data-value="Tier2">
+                <span class="radiop"><i class="fa-regular fa-circle-check"></i> Tier 2</span>
+              </label>
+              <label class="radio-option" data-value="Tier3">
+                <span class="radiop"><i class="fa-regular fa-circle-check"></i> Tier 3</span>
+              </label>
+            </div>
+          </div>
+          <label class="inputhead" for="monthlySales">Approx. Monthly Sales (In INR)</label>
+          <div class="input-group">
+            <input type="text" id="monthlySales" placeholder="e.g ₹ 5,00,000">
+            <span class="unit-container">
+              <span class="vertical-line"></span>
+              <span class="unit">Rupees</span>
+            </span>
+          </div>
+        </div>
+
+      </div>
+      <div class="uprightsec">
+        <div class="downsaleshead">
+          <h3 class="storehead3">Your Calculated Pottential</h3>
+        </div>
+        <div class="table" id="result">
+          <table>
+            <thead>
+              <tr>
+                <th>Sales Category</th>
+                <th>Sales Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Minimum Sales</td>
+                <td id="minimum-sales"></td>
+              </tr>
+              <tr>
+                <td>Average Sales</td>
+                <td id="average-sales"></td>
+              </tr>
+              <tr>
+                <td>Best in Class Sales</td>
+                <td id="best-sales"></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+        <div class="quote-container">
+          <div class="quote-text" id="sales-analysis">
+          </div>
+        </div>
+  </section>
+
+</body>
+
+</html>

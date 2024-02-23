@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="At Kirana Friends, we help Kirana store owners by Providing them access to the knowledge and know-how of running a Kirana store Opening Access to overall Kirana Ecosystem of Suppliers and Vendors">
+  <meta name="keywords" content="Kirana, grocery, dairy, sales, shelf, mumbai">
+  <meta name="author" content="Kirana Friends">
+  <link rel="shortcut icon" href=/static/assets/fav-icon.png type="image/x-icon">
+  <link rel="stylesheet" href=/static/css/nav.css>
+  <link rel="stylesheet" href=/static/css/footer.css>
+  <link rel="stylesheet" href="/static/css/salespottential.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/de7c20493d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Sales Pottential</title>
+
+</head>
+
+<body>
+  <!-- Navbar starts -->
+  <div class="top-nav">
+    <div class='top-nav-box'>
+        <div class="Kirana-logo">
+            <a href="/public/index.html" rel="noopener noreferrer" target="_self" title="Kirana Friends">
+                <img class="logo" src=/static/assets/logo.png alt="">
+            </a>
+        </div>
+        <div class="sub-nav">
+            <ol class='nav-items'>
+                <li class='nav-item'>
+                    <a href="/public/index.html" rel="noopener noreferrer" target="_self">Home</a>
+                </li>
+                <li class='nav-item'>
+                    <a href="/public/about.html" rel="noopener noreferrer" target="_self">About Us</a>
+                </li>
+                <li class='nav-item'>
+                    <a href="/contact" rel="noopener noreferrer" target="_self">Blogs</a>
+                </li>
+                <li class='nav-item'>
+                    <a href="/public/calculators.html" rel="noopener noreferrer" target="_self">Calculators</a>
+                </li>
+                <li class='nav-item'>
+                    <a href="https://misraji.kiranafriends.com/" rel="noopener noreferrer" target="_self">Ask Misraji</a>
+                </li>
+                <li class='nav-item'>
+                    <a href="/public/contact.html" rel="noopener noreferrer" target="_self">Contact Us</a>
+                </li>
+            </ol>
+        </div>
+        <div class='right-nav'>
+            <ol class='nav-items'>
+                <li class='nav-item box-nav'> <img class="w-[10vh] lg:w-[20vh] mr-[2vh] my-[2vh]" src="/static/assets/playstore.webp"
+                    alt="playstore" />
+                </li>
+            </ol>
+        </div>
+        <div class="hamburger">
+            <div id="menu-icon" onclick='openNav()'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='wrapper'>
+    <div class="sidebar" id="sidenav">
+        <div class="side-cross" onclick='openNav()'>
+            &times;
+        </div>
+        <div class="sidebar-link-container">
+            <ol id="links-sidebar">
+                <li class="nav-links-sidebar active">
+                    <a href="/public/index.html" rel="noopener noreferrer" target="_self">Home</a>
+                </li>
+                
+                <li class="nav-links-sidebar ">
+                    <a href="/public/about.html" rel="noopener noreferrer" target="_self">About Us</a>
+                </li>
+                <li class="nav-links-sidebar ">
+                    <a href="/contact" rel="noopener noreferrer" target="_self">Blogs</a>
+                </li>
+                <li class="nav-links-sidebar ">
+                    <a href="/public/calculators.html" rel="noopener noreferrer" target="_self">Calculators</a>
+                </li>
+                <li class="nav-links-sidebar ">
+                    <a href="https://misraji.kiranafriends.com/" rel="noopener noreferrer" target="_self">Ask Misraji</a>
+                </li>
+                <li class="nav-links-sidebar ">
+                    <a href="/public/contact.html" rel="noopener noreferrer" target="_self">Contact Us</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <!-- Navbar ends here -->
+    <!-- main body content -->
+    <section class="sales">
+      <div class="upsec">
+        <div class="upleftsec">
+          <div class="saleshead">
+            <h3 class="storehead1">GET TO KNOW YOUR</h3>
+            <h1 class="storehead2">Sales Pottential</h1>
+          </div>
+          <div class="salesinput">
+            <label class="inputhead" for="storeSize">Store Size (Sq. Ft.)
+            </label>
+            <div class="input-group">
+              <input type="text" id="storeSize" placeholder="e.g 5,000">
+              <span class="unit-container">
+                <span class="vertical-line"></span>
+                <span class="unit">Sq. Ft.</span>
+              </span>
+            </div>
+            <!-- City Category Options -->
+            <div class="radio-container" id="cityCategory">
+              <p class="inputhead">City Category :</p>
+              <div class="radio-group">
+                <div class="radio-option" data-value="High Street"><span class="radiop"><i class="fa fa-university"
+                      aria-hidden="true"></i> High Street</span></div>
+                <div class="radio-option" data-value="Residential"><span class="radiop"><i class="fa fa-building-o"
+                      aria-hidden="true"></i> Residential</span></div>
+                <div class="radio-option" data-value="Low rent area"><span class="radiop"><i class="fa fa-home"
+                      aria-hidden="true"></i> Low Rent</span></div>
+              </div>
+            </div>
+
+            <!-- City Tier Options -->
+            <div class="radio-container" id="cityTier">
+              <p class="inputhead">City Tier :</p>
+              <div class="radio-group">
+                <label class="radio-option" data-value="Tier1">
+                  <span class="radiop"><i class="fa-regular fa-circle-check"></i> Tier 1</span>
+                </label>
+                <label class="radio-option" data-value="Tier2">
+                  <span class="radiop"><i class="fa-regular fa-circle-check"></i> Tier 2</span>
+                </label>
+                <label class="radio-option" data-value="Tier3">
+                  <span class="radiop"><i class="fa-regular fa-circle-check"></i> Tier 3</span>
+                </label>
+              </div>
+            </div>
+            <label class="inputhead" for="monthlySales">Approx. Monthly Sales (In INR)</label>
+            <div class="input-group">
+              <input type="text" id="monthlySales" placeholder="e.g ₹ 5,00,000">
+              <span class="unit-container">
+                <span class="vertical-line"></span>
+                <span class="unit">Rupees</span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <div class="uprightsec">
+          <div class="downsaleshead">
+            <h3 class="storehead3">Your Calculated Pottential</h3>
+          </div>
+          <div class="table" id="result">
+            <table>
+              <thead>
+                <tr>
+                  <th>Sales Category</th>
+                  <th>Sales Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Minimum Sales</td>
+                  <td id="minimum-sales"></td>
+                </tr>
+                <tr>
+                  <td>Average Sales</td>
+                  <td id="average-sales"></td>
+                </tr>
+                <tr>
+                  <td>Best in Class Sales</td>
+                  <td id="best-sales"></td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+          <div class="quote-container">
+            <div class="quote-text" id="sales-analysis">
+            </div>
+          </div>
+    </section>
+    <!-- Footer starts here -->
+    <footer>
+      <div class="footer mx-auto mt-[10vh]">
+        <div class="upperpart">
+          <div class="gettogether">
+            <a href="/home" rel="noopener noreferrer" target="_self" title="BunchUp">
+              <img class="get_together" src="/static/assets/logo.png" loading="lazy" alt="Get Together With BunchUp">
+            </a>
+          </div>
+          <div class="content2">
+            <ol>
+              <li class=" shiv">Follow Us on</li>
+            </ol style='flex-direction: row'>
+            <div class="medialinks">
+              <ol>
+                <li>
+                  <a href="https://www.instagram.com/bunchup.in/" target="_blank" title="BunchUp Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/bunchup-in/" target='_blank' title="BunchUp linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" rel="noopener noreferrer" title="BunchUp facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" rel="noopener noreferrer" title="BunchUp twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="middlepart">
+          <div class="content1">
+            <p>
+              Connects people through offline meetups, parties, and events, fostering community and
+              facilitating meaningful interactions.
+            </p>
+          </div>
+          <div class="content1">
+            <ol>
+              <li class=shiv><a href="/contact" rel="noopener noreferrer">Kirana </a></li>
+              <li><a href="/home" rel="noopener noreferrer">Terms & Conditions</a></li>
+              <li><a href="/about" rel="noopener noreferrer">Refund Policy</a></li>
+              <li><a href="/about" rel="noopener noreferrer" target="_self">Privacy Policy</a></li>
+              <li><a href="/team" rel="noopener noreferrer">Vision & Features</a></li>
+            </ol>
+          </div>
+          <div class="content1">
+            <ol>
+              <li class=shiv><a href="/contact" rel="noopener noreferrer">Services </a></li>
+              <li><a href="/contact" rel="noopener noreferrer">Planogram</a></li>
+              <li><a href="/faq" rel="noopener noreferrer">Retail Transformation</a></li>
+              <li><a href="#" rel="noopener noreferrer">Retail Store Staff Training</a></li>
+              <li><a href="/privacy" rel="noopener noreferrer">Retail Store Promotions</a></li>
+              <li><a href="/privacy" rel="noopener noreferrer">Retail Management Information System</a></li>
+            </ol>
+          </div>
+          <div class="content1">
+            <ol>
+              <li class=shiv><a href="/contact" rel="noopener noreferrer">Calculators</a></li>
+              <li><a href="/contact" rel="noopener noreferrer">Store Sales Potential</a></li>
+              <li><a href="/faq" rel="noopener noreferrer">Store Renovation Calculator</a></li>
+              <li><a href="#" rel="noopener noreferrer">Store's Family Potential</a></li>
+              <li><a href="/privacy" rel="noopener noreferrer">Privacy Policy</a></li>
+            </ol>
+          </div>
+
+        </div>
+        <hr class="footer-line">
+        <div class="lastpart">
+          <div>Copyright &copy; 2024 TRRAIN Circle Technologies Pvt. Ltd.</div>
+          <div class='lastpart-love'>Made with &nbsp;<i class="fa-solid fa-heart"></i> in India</div>
+
+          <div class='down'>
+            <button><a
+                href="https://play.google.com/store/apps/details?id=com.kiranafriend.android&hl=en_IN&gl=US">Available
+                on
+                <i class="fab fa-android"></i></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/nav.js"></script>
+    <script src="/static/js/pottential.js"></script>
+
+</body>
+
+</html>
