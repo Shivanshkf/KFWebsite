@@ -241,7 +241,7 @@ backdrop-filter: blur(20px);
   margin-top: 20px;
 }
 .buti {
-  padding: 10px 20px;
+  padding: 14px 20px;
   border-radius: 30px;
   border: 0;
   background: #FA762B;
@@ -249,8 +249,8 @@ backdrop-filter: blur(20px);
   font-size: 1rem;
   font-family: 'Inter';
   transition: all 0.3s ease;
-  font-weight: 600;
-  color: #000000;
+  font-weight: 700;
+  color: #ffffff;
   cursor: pointer;
 }
 

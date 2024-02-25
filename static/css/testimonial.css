@@ -88,7 +88,7 @@
 
 @media (max-width:600px) {
   .testimonials-wrap {
-    margin-top: 30vw;
+    margin-top: 40vw;
   }
   .heading-section h2 {
     font-size: 2rem;
@@ -99,7 +99,7 @@
 
 @media (max-width:390px) {
   .testimonials-wrap {
-    margin-top: 70vw;
+    margin-top: 80vw;
   }
   .heading-section h2 {
     font-size: 1.8rem;

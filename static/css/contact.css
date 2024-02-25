@@ -175,6 +175,10 @@
 
 @media (max-width: 768px) {
 
+  .contact {
+    
+    margin: 8rem auto auto;
+  }
   .form,
   .leftform {
     display: flex;
