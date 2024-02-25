@@ -274,18 +274,18 @@ backdrop-filter: blur(20px);
 .banner-title {
   font-size: 1.8rem;
   color:#303237;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
 }
 .banner-subtitle {
-  font-size: 18px;
+  font-size: 0.8rem;
   color: grey;
 }
 .banner-text {
   margin: 20px 0;
 }
 .banner-button {
-  background-color: red;
+  background-color: #FA762B;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -346,6 +346,19 @@ backdrop-filter: blur(20px);
   font-size: 0.9rem;
   color:#303237;
   font-weight: 400;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content {
+  max-width: 100%;  
+}
+.banner-image {
+  width: 100%;
+  
 }
 }
 
