@@ -192,13 +192,13 @@
 }
 
 .radio-option:hover {
-  background-color: #502dc4;
+  background-color: #FD6500;
   /* Change to desired hover background color */
   color: #ffffff;
 }
 
 .radio-option.selected {
-  background-color: #502dc4;
+  background-color: #FD6500;
   color: white;
   /* border-color: #0000005e; */
 
@@ -264,7 +264,7 @@ tr:hover {
   font-family: 'Inter';
   font-size: 1.4rem;
   font-weight: 1000;
-  color: #3b1aa8;
+  color: #FD6500;
 }
 
 /* Media Query */

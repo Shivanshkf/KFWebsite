@@ -131,7 +131,7 @@
 .cost-value, .area-value {
   font-size: 24px;
   font-weight: bold;
-  color: #805cf8; /* Assuming a green color for the values */
+  color: #ff954e; /* Assuming a green color for the values */
 }
 
 .verticalline {

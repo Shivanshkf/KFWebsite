@@ -93,7 +93,7 @@ li {
 }
 .medialinks li a i:hover {
   font-size: 1.4rem;
-  color: #3C0D99;
+  color: #FD6500;
 }
 .medialinks ol {
   display: flex;
@@ -102,11 +102,11 @@ li {
 }
 .medialinks ol:hover li:hover {
   font-size: 1.4rem;
-  color: #3C0D99;
+  color: #FD6500;
   cursor: pointer;
 }
 .content1 a:hover {
-  color: #3C0D99;
+  color: #FD6500;
   cursor: pointer;
   text-decoration: underline;
   font-weight: 600;
