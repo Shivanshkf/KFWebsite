@@ -113,8 +113,8 @@
 
 #result{
   margin-top: 30px;
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #ff8b3d; 
 }
 .rightp{
@@ -127,15 +127,13 @@
 
 .calculate-button-container{
   margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
 }
 .calculate{
   padding: 8px 26px;
     border-radius: 20px;
     border: 0;
-    background: linear-gradient(90deg, #F69F37 0%, #FD6500);
+    background:#FA762B;
     letter-spacing: 1.5px;
     font-size: 16px;
     font-family: 'Inter';
