@@ -1,0 +1,33 @@
+body,
+html {
+    
+    margin: 0;
+    /* Remove default margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacy{
+    width: 80%;
+    margin: auto;
+    margin-top: 8rem;
+    box-sizing: border-box;
+}
+.privacyhead{
+    font-family: 'Inter';
+    font-size: 2.5rem;
+    font-weight: 1000;
+    color: #303237;
+    text-align: center;
+}
+.privacypara{
+    font-family: 'Inter';
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #3b3838;
+}
+.privacydiv{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

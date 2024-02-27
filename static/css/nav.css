@@ -26,9 +26,9 @@
   width: 96vw;
   height: 4.5rem;
   margin: 0 1.3vw;
-  backdrop-filter: blur(20px);
+ 
   border: 1px solid rgba(255, 255, 255, 1);
-  border-radius: 15px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
