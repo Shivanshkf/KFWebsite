@@ -182,7 +182,7 @@
 }
 
 .radio-option:hover {
-  background: linear-gradient(90deg, #F69F37 0%, #FD6500);
+  background: #FA762B;
   /* Change to desired hover background color */
   color: #ffffff;
 }
@@ -201,7 +201,7 @@
   padding: 8px 26px;
     border-radius: 20px;
     border: 0;
-    background: linear-gradient(90deg, #F69F37 0%, #FD6500);
+    background: #FA762B;
     letter-spacing: 1.5px;
     font-size: 16px;
     font-family: 'Inter';
