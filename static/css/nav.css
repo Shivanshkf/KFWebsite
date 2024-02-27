@@ -166,7 +166,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #b29aff;
+    background-color: #fefefe;
     overflow-x: hidden;
     transition: 0.2s;
   }
@@ -182,16 +182,17 @@
     padding-top: 15vh;
   }
   .links-sidebar {
-    color: #fff;
+    color: #303237;
     list-style: none;
     text-align: center;
   }
   .nav-links-sidebar a {
     text-decoration: none;
-    color: #fff;
+    color: #303237;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 800;
   }
+  
   .nav-links-sidebar {
     padding: 1rem;
     margin: auto auto auto -3vh;
@@ -208,7 +209,7 @@
   }
   .active a {
     position: relative;
-    color: #FD6500;
+    color: #000000;
     text-decoration-thickness: 2px;
   }
   .active a::after {
@@ -241,7 +242,7 @@
   position: absolute;
   height: 0.5vh;
   width: 100%;
-  background: #FD6500;
+  background: #212020;
   border-radius: 1vw;
   opacity: 1;
   left: 0;
@@ -295,6 +296,5 @@
   .hamburger {
     height: 5px;
     margin-top: 2vh;
-    
   }
 }
