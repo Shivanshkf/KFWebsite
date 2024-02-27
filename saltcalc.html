@@ -130,20 +130,15 @@
                   <span class="unit">Rs.</span>
                 </span>
             </div>
-            <p class="para">Elevate your grocery business efficiency with the Salt Circle Calculator - simplifying inventory control
-                for smarter decisions.</p>
+            
+                <div class="calculate-button-container">
+                    <button id="calculateButton" class="calculate">Calculate</button>
+                  </div>
         </div>
         <span class="horizontal-line"></span>
         <div class="saltrightsec">
             <h1 class="lefthead">Summary</h1>
-
-			<p class="resoutput" id="result"></p>
-            <p class="rightp">Sale of 1 packet salt means 1 family shops with you. You should plan your monthly sales and stock on this basis.</p>
-			
-			<button class="saltbut">
-				<a href="https://misraji.kiranafriends.com/" >Learn More</a>
-			</button>
-		
+			<p class="resoutput" id="result">---- families shop with you in a month and the monthly sales potential of your store is Rs. ----.</p>
 		</div> 
     </div>
 	<!-- main div -->
@@ -164,7 +159,7 @@
                     <div class="medialinks">
                         <ol>
                             <li>
-                                <a href="https://www.instagram.com/kiranafriends/?igshid=YmMyMTA2M2Y%3D" target="_blank"
+                                <a href="https://www.instagram.com/kiranafriends/" target="_blank"
                                     title="KF Instagram">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
@@ -176,17 +171,17 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/kiranafriends/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" rel="noopener noreferrer" title="KF facebook">
+                                <a href="https://www.facebook.com/kiranafriends/">
                                     <i class="fa-brands fa-facebook"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/kiranafriends?t=u4mV0AtAsGmxPg5qYde84w&s=08" rel="noopener noreferrer" title="KF twitter">
+                                <a href="https://twitter.com/kiranafriends" rel="noopener noreferrer" title="KF twitter">
                                     <i class="fa-brands fa-twitter"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/channel/UCk9Cu64-wxzQPnk4mRKLhTQ" rel="noopener noreferrer" title="KF youtube">
+                                <a href="https://www.youtube.com/@kiranafriends" rel="noopener noreferrer" title="KF youtube">
                                     <i class="fa-brands fa-youtube"></i>
                                 </a>
                             </li>
@@ -238,7 +233,6 @@
         </div>
     </footer>
 
-
     <script>
         function calculateResult() {
             var saltPacketsInput = document.getElementById("saltPackets").value;
@@ -250,19 +244,16 @@
 
             // Check if the inputs are valid numbers
             if (isNaN(saltPackets) || isNaN(monthlySpend)) {
-                document.getElementById("result").innerText = "Rs. -------";
+                document.getElementById("result").innerText = "---- families shop with you in a month and the monthly sales potential of your store is Rs. ----.";
             } else {
                 // Calculate the result
                 var result = saltPackets * monthlySpend;
-                document.getElementById("result").innerText = " " + result.toFixed(2) + " Rs.";
+                document.getElementById("result").innerText = `${saltPackets} families shop with you in a month and the monthly sales potential of your store is Rs. ${result.toFixed(2)}.`;
             }
         }
 
         // Add event listener to trigger the calculation when inputs change
-        document.getElementById("saltPackets").addEventListener("input", calculateResult);
-        document.getElementById("monthlySpend").addEventListener("input", calculateResult);
-
-        // Initial calculation when the page loads
+        document.getElementById("calculateButton").addEventListener("click", calculateResult);
         calculateResult();
     </script>
     <script src="static/js/nav.js"></script>

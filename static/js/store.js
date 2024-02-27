@@ -1,5 +1,6 @@
 
-document.getElementById('area').addEventListener('input', calculateBudget);
+document.getElementById('calculateButton').addEventListener('click', calculateBudget);
+
 
 function initializeWithDashes() {
     document.getElementById('total-cost').innerText = 'Rs. ----------';

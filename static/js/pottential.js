@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   cityCategoryOptions.forEach(option => {
       option.addEventListener("click", function () {
           updateRadioSelection(cityCategoryOptions, this, "cityCategory");
-          updateClassificationResult();
+        //   updateClassificationResult();
       });
   });
 
@@ -13,35 +13,40 @@ document.addEventListener("DOMContentLoaded", function () {
   cityTierOptions.forEach(option => {
       option.addEventListener("click", function () {
           updateRadioSelection(cityTierOptions, this, "cityTier");
-          updateClassificationResult();
+        //   updateClassificationResult();
       });
   });
 
   // Attach event listeners to other input fields
-  document.getElementById("storeSize").addEventListener("input", updateClassificationResult);
-  document.getElementById("monthlySales").addEventListener("input", updateClassificationResult);
+  document.getElementById("storeSize").addEventListener("input", function () {
+   
+});
+document.getElementById("monthlySales").addEventListener("input", function () {
+    
+});
 
-  // Initial update in case there are pre-filled values
-  updateClassificationResult();
+// Keep this event listener as it is
+document.getElementById("calculateSales").addEventListener("click", updateClassificationResult);
 });
 
 let selectedCityCategory = "";
 let selectedCityTier = "";
 
-function updateRadioSelection(optionsGroup, selectedOption, selectionType) {
-  optionsGroup.forEach(option => {
-      option.classList.remove("selected");
-  });
-  selectedOption.classList.add("selected");
-
-  const selectedValue = selectedOption.getAttribute("data-value");
-  if (selectionType === "cityCategory") {
-      selectedCityCategory = selectedValue;
-  } else if (selectionType === "cityTier") {
-      selectedCityTier = selectedValue;
-  }
-
-  console.log(selectionType, "selected:", selectedValue);
+function updateRadioSelection(optionGroup, selectedOption, category) {
+    optionGroup.forEach(option => {
+        if (option === selectedOption) {
+            option.classList.add("selected");
+            const value = option.getAttribute("data-value");
+            sessionStorage.setItem(category, value);
+            if (category === 'cityCategory') {
+                selectedCityCategory = value;
+            } else if (category === 'cityTier') {
+                selectedCityTier = value;
+            }
+        } else {
+            option.classList.remove("selected");
+        }
+    });
 }
 
 function updateClassificationResult() {

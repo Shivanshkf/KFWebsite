@@ -14,10 +14,8 @@
 }
 
 .upper, .summary {
-  
   flex: 1;
   /* margin-left: 20px; */
-  
 }
 
 .storehead1{
@@ -108,13 +106,33 @@
   margin: 0;
 }
 
+.calculate-button-container{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculate{
+  padding: 8px 26px;
+    border-radius: 20px;
+    border: 0;
+    background: linear-gradient(90deg, #F69F37 0%, #FD6500);
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    font-family: 'Inter';
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
 .summary {
   margin-left: 50px;
   /* text-align: left; */
 }
 
 .summary-card {
-  margin-top: 90px;
+  margin-top: 50px;
   background-color: #ffffff;
   width: 80%;
   border-radius: 8px;
