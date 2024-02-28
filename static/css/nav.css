@@ -153,8 +153,8 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-        text-align: center;
-        
+    text-align: center;
+
   }
   .logo {
     min-width: 10vh;
@@ -243,8 +243,8 @@
 #menu-icon span {
   display: block;
   position: absolute;
-  height: 0.5vh;
-  width: 100%;
+  height: 0.4vh;
+  width: 90%;
   background: #212020;
   border-radius: 1vw;
   opacity: 1;
@@ -263,11 +263,11 @@
   cursor: pointer;
 }
 #menu-icon span:nth-child(2) {
-  top: 15px;
+  top: 12px;
   cursor: pointer;
 }
 #menu-icon span:nth-child(3) {
-  top: 30px;
+  top: 26px;
   cursor: pointer;
 }
 #menu-icon.open span:first-child {
