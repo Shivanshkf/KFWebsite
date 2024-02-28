@@ -150,8 +150,11 @@
     margin-top: 10px;
   }
   .Kirana-logo {
-    flex-grow: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
         text-align: center;
+        
   }
   .logo {
     min-width: 10vh;
