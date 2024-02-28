@@ -55,7 +55,7 @@
 }
 @media (max-width:600px) {
   .testimonials-wrap {
-    margin-top: 50vw;
+    margin-top: 60vw;
   }
   .testimonial-box {
     width: 100%; /* Full width on smaller screens */
