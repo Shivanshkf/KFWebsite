@@ -87,7 +87,7 @@
   justify-content: center;
   align-items: center;
   background-color: #F0F4F8;;
-  /* border: 3px solid rgb(255, 255, 255); */
+  height: 20rem;
   box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
   padding: 1.4rem;
   border-radius: 1rem;
@@ -161,10 +161,15 @@
   display: flex;
   gap: 1rem;
 }
-.advcard h2 {
+.advcard h1 {
   font-family: 'Inter';
   color: #000000;
   font-size: 1rem;
+}
+.advcard h2 {
+  font-family: 'Inter';
+  color: #363535;
+  font-size: 0.8rem;
 }
 .links {
   

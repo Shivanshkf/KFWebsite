@@ -278,7 +278,7 @@ backdrop-filter: blur(20px);
 .banner-title {
   font-size: 1.8rem;
   color:#303237;
-  font-weight: 900;
+  font-weight: 700;
   margin: 0;
   line-height: 6vh;
 }
@@ -368,7 +368,7 @@ backdrop-filter: blur(20px);
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
-  line-height: 5vh;
+  line-height: 3vh;
 }
 }
 
