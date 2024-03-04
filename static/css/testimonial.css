@@ -24,8 +24,8 @@
   gap: 2rem;
 }
 .testimonial-box {
-  width: 30%;
-  height: 100%;
+  width: 40%;
+  height: 25vw;
   gap: 0;
   background: #F0F4F8;
   box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
@@ -53,12 +53,18 @@
     color: #adadad;
     font-size: 14px;
 }
+
+@media (max-width:900px) {
+
+
+}
 @media (max-width:600px) {
   .testimonials-wrap {
     margin-top: 60vw;
   }
   .testimonial-box {
     width: 100%; /* Full width on smaller screens */
+    height: 100%;
 }
   .testimonials-content {
     display: flex;
