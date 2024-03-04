@@ -304,6 +304,23 @@ li {
   }
 }
 
+@media screen and (max-width: 435px) {
+  
+  .upperpart {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .middlepart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .lasti{
+    display: block;
+  }
+}
 @media screen and (max-width: 376px) {
   .content1,
   .content1 p {
