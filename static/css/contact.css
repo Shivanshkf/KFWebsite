@@ -33,9 +33,13 @@
 
 .form {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   position: relative;
   align-items: center;
 }
+/*  */
+
 
 .leftform {
   background-color: #b29aff25;
@@ -135,7 +139,22 @@ input::-webkit-outer-spin-button,
   font-weight: 400;
   color: #303237;
 }
+@@media (min-width: 1024px) {
+  .form {
+      display: flex;
+      flex-wrap: nowrap; /* Ensure children are side by side */
+      justify-content: space-between; /* Add space between the forms */
+  }
 
+  .leftform, .rightform {
+      position: static; /* Default positioning */
+      max-width: 48%; /* Slightly less than half to allow for margin/padding */
+  }
+
+  .rightform {
+      padding: 3rem; /* Adjust padding as needed */
+  }
+}
 @media (max-width: 992px) {
   .ctxt {
     font-size: 1rem;
