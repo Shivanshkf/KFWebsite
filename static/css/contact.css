@@ -159,9 +159,11 @@ input::-webkit-outer-spin-button,
     grid-template-columns: 40% 1fr; /* This sets the left form to 40% and the right form to take the remaining space */
     gap: 20px; /* Stack the forms on top of each other on smaller screens */
   }
-  .leftform,
+  .leftform {
+    margin-top:2rem;
+    padding: 1.5rem;
+  }
   .rightform {
-    /* Reset any specific width, margin, or padding if necessary */
     margin: 0;
     padding: 1.5rem;
   }
@@ -173,7 +175,7 @@ input::-webkit-outer-spin-button,
   }
 
   .rightform {
-    padding-left: 22rem;
+    padding-left: 2rem;
     padding-right: 1.5rem;
   }
 
