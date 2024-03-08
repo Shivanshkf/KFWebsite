@@ -1,11 +1,17 @@
 .main {
   position: relative;
-  margin: 15vh auto auto;
+  margin: 5vh auto auto;
   display: flex;
   justify-content: space-between;
   width: 80vw;
 }
-
+.homesec{
+  height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: row; /* Stack children vertically */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+}
 h1.getready {
   
   font-family: 'Inter';
@@ -52,7 +58,7 @@ h2.subhead {
 }
 
 .stat h1 {
-  font-size: 3.8vw; /* Adjusted to match your inline styles */
+  font-size: 3.2rem; /* Adjusted to match your inline styles */
   font-weight: 1000;
   color:#FD6500;
   letter-spacing: normal; /* Adjust as needed */
@@ -60,7 +66,7 @@ h2.subhead {
 }
 
 .stat p {
-  font-size: 1.1vw; /* Adjusted to match your inline styles */
+  font-size: 0.9rem; /* Adjusted to match your inline styles */
   font-weight: 400;
   letter-spacing: normal; /* Adjust as needed */
   padding-bottom: 1vw;
@@ -70,7 +76,7 @@ h2.subhead {
 
 .featureheading{
   font-family: 'Inter';
-  font-size: 3.6vw;
+  font-size: 3rem;
   font-weight: 900;
   color:#303237;
   line-height: 4vw;
@@ -90,20 +96,6 @@ h2.subhead {
   gap: 15px;
 }
 
-/* .service-icon {
- 
-    max-height: 65px;
-    max-width: 65px;
-    min-height: 65px;
-    min-width: 65px;
-    border: 2px solid #000000;
-    border-radius: 100%; 
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: #ffffff;
-} */
-
 .ica{
     max-height: 50px;
     max-width: 50px;
@@ -111,17 +103,13 @@ h2.subhead {
     min-width: 25px;
 }
 
-/* .connect-ideas { background-color: #b29aff }
-.make-schedules { background-color: #b29aff }
-.working-mobile { background-color: #b29aff } */
-
 .service-content {
   display: flex;
   flex-direction: column;
 }
 
 .service-title {
-  font-size: 1.8vw;
+  font-size: 1.3rem;
   color:#303237;
   font-weight: 700;
   margin: 0;
@@ -129,7 +117,7 @@ h2.subhead {
 
 .service-desc {
   margin: 5px 0 0;
-  font-size: 1.2vw;
+  font-size: 0.9rem;
   color:#303237;
   font-weight: 400;
 }
@@ -392,8 +380,8 @@ backdrop-filter: blur(20px);
     
   }
   .stat p {
-    font-size: 4vw; /* Adjusted to match your inline styles */
-    font-weight: 600;
+    font-size: 1rem; /* Adjusted to match your inline styles */
+    font-weight: 500;
     letter-spacing: normal; /* Adjust as needed */
     margin: 0;
     padding: 0;
@@ -423,3 +411,18 @@ backdrop-filter: blur(20px);
   }
   }
   
+  @media (max-width:993px) {
+    .homesec{
+      height: 100vh; /* Full height of the viewport */
+        display: flex;
+        flex-direction: row; /* Stack children vertically */
+        align-items: center; /* Center items vertically */
+        justify-content: space-between;
+    }
+   
+    h1.getready {
+      line-height: normal; 
+      font-size: 3rem;
+    }
+  
+  }
