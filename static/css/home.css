@@ -2,6 +2,7 @@
   position: relative;
   margin: 5vh auto auto;
   display: flex;
+  flex-direction: column; /* Stack children vertically */
   justify-content: space-between;
   width: 80vw;
 }
@@ -12,14 +13,22 @@
     align-items: center; /* Center items vertically */
     justify-content: space-between;
 }
+.element {
+  width: 50%; /* Full width of the parent */
+  margin-top: 10vh; /* Top margin of 10% of the viewport height */
+  margin-bottom: 10vh; /* Bottom margin of 10% of the viewport height */
+}
+
 h1.getready {
-  
+  font-size: 3rem; /* Converted from 4vh, adjust as needed */
+  text-align: center;
   font-family: 'Inter';
   font-weight: 1000;
   color:#303237;
   line-height: 8vh;
   margin-top: 6vh;
   margin-bottom: 1vw;
+  text-align: left;
  
 }
 
@@ -74,6 +83,13 @@ h2.subhead {
 /* stats section end */
 /* new stats start */
 
+.servicecontainer {
+  
+  display: flex; /* Enable flexbox */
+  flex-direction: row; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: space-between; /* Space out children */
+}
 .featureheading{
   font-family: 'Inter';
   font-size: 3rem;
@@ -358,13 +374,16 @@ backdrop-filter: blur(20px);
   margin: 0;
   line-height: 3vh;
 }
+
+.homesec{
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    
+}
 }
 
 @media (max-width:390px) {
-  .stats-section{
-    margin-top: 60vh;
-    
-  }
+  
   .stats {
     flex-direction: column; /* Stack stats vertically on smaller screens */
     align-items: center; /* Center align items for better readability */
@@ -409,20 +428,57 @@ backdrop-filter: blur(20px);
     color:#303237;
     font-weight: 400;
   }
+
+  .homesec{
+    height: 100vh; /* Full height of the viewport */
+      display: flex;
+      flex-direction: row; /* Stack children vertically */
+      align-items: center; /* Center items vertically */
+      justify-content: space-between;
+  }
   }
   
-  @media (max-width:993px) {
+  @media (max-width:913px) {
     .homesec{
-      height: 100vh; /* Full height of the viewport */
+      height: 120vh; /* Full height of the viewport */
         display: flex;
-        flex-direction: row; /* Stack children vertically */
-        align-items: center; /* Center items vertically */
+        flex-direction: column; /* Stack children vertically */
         justify-content: space-between;
     }
-   
     h1.getready {
       line-height: normal; 
       font-size: 3rem;
     }
-  
+    .stat h1 {
+      font-size: 1.8rem; /* Adjusted to match your inline styles */
+      font-weight: 900;
+      color:#FD6500;
+      margin: 0;
+      padding: 0; 
+    }
+    .stats-section{
+      margin-top: 30vh;
+      
+    }
+    .servicecontainer {
+      margin-top: 2vh; /* Top margin of 2% of the viewport height */
+      display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack children vertically */
+  }
+  .featureheading{
+    font-size: 2rem;
+   font-weight: 800;
+  }
+  .service-title{
+    font-size: 1.2rem;
+  }
+  .service-desc {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+  }
+  .element {
+    width: 50%; /* Full width of the parent */
+    margin-top: 10vh; /* Top margin of 10% of the viewport height */
+    margin-bottom: 10vh; /* Bottom margin of 10% of the viewport height */
+  }
   }
