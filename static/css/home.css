@@ -25,7 +25,7 @@ h1.getready {
   font-family: 'Inter';
   font-weight: 1000;
   color:#303237;
-  line-height: 8vh;
+  /* line-height: 8vh; */
   margin-top: 6vh;
   margin-bottom: 1vw;
   text-align: left;
@@ -175,7 +175,11 @@ h2.subhead {
   margin-top: 5px;
 }
 /* flip card css */
-
+.flip-card {
+  width: 40vh; /* Sets the width to 30% of the viewport height */
+  height: 60vh; /* Sets the height to 50% of the viewport height */
+  margin-right: 10vh;
+}
 
 .flip-card-inner{
   transform-style: preserve-3d;
@@ -480,5 +484,10 @@ backdrop-filter: blur(20px);
     width: 50%; /* Full width of the parent */
     margin-top: 10vh; /* Top margin of 10% of the viewport height */
     margin-bottom: 10vh; /* Bottom margin of 10% of the viewport height */
+  }
+  .flip-card {
+    width: 30vh; /* Sets the width to 30% of the viewport height */
+    height: 50vh; /* Sets the height to 50% of the viewport height */
+    margin-right: 10vh;
   }
   }
