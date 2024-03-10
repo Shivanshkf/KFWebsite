@@ -291,7 +291,7 @@ backdrop-filter: blur(20px);
   color:#303237;
   font-weight: 700;
   margin: 0;
-  line-height: 6vh;
+  line-height: normal;
 }
 .banner-subtitle {
   font-size: 0.8rem;
@@ -379,7 +379,7 @@ backdrop-filter: blur(20px);
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
-  line-height: 3vh;
+  line-height: normal;
 }
 
 .homesec{
@@ -397,7 +397,7 @@ backdrop-filter: blur(20px);
     margin-top: 1em; /* Adjust spacing as needed */
   }
   .stats-section{
-    margin-top: 30vh;
+    margin-top: 40vh;
     
   }
   .stat h1 {
@@ -500,6 +500,18 @@ backdrop-filter: blur(20px);
     position: absolute;
     width: 80%;
     height: 80%;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-content {
+    max-width: 100%;  
+  }
+  .banner-image {
+    width: 100%; 
   }
   }
   @media (max-width:320px) {
