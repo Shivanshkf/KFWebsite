@@ -195,49 +195,7 @@ h2.subhead {
   animation: flip 2s alternate-reverse 1;
   
 }
-@media (max-width:600px) {
-  .main {
-    margin: auto auto auto;
-  }
-  h1.getready {
-    line-height: normal; 
-    font-size: 2rem;
-  }
-  .flip-card-inner{
-    animation: flip 5s alternate-reverse infinite;
-    animation-delay: 3s;
-  }
-  .info1, .info{
-    display: none;
-  }
-}
-.flip-card-front, .flip-card-back{
-  backface-visibility: hidden;
-}
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-.flip-card:hover .info, .flip-card:hover .info1 {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.flip-card:hover .flip-card-back .info, .flip-card:hover .flip-card-back .info1 {
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-.flip-card-back {
-  transform: rotateY(180deg);
-}
-
-@keyframes flip {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(180deg);
-  }
-}
+ 
 
 
 .info{
@@ -318,140 +276,7 @@ backdrop-filter: blur(20px);
   height: auto;
 }
 
-@media (max-width:600px) {
-.stats-section{
-  margin-top: 10vh;
-  
-}
-.stats {
-  flex-direction: column; /* Stack stats vertically on smaller screens */
-  align-items: center; /* Center align items for better readability */
-  margin-top: 1em; /* Adjust spacing as needed */
-}
-.stat {
-  line-height: 3.8rem; /* Example line height */
-}
-.stat h1 {
-  font-size: 3rem; /* Adjusted to match your inline styles */
-  font-weight: 900;
-  color:#FD6500;
-  
-  
-}
-.stat p {
-  font-size: 1rem; /* Adjusted to match your inline styles */
-  font-weight: 600;
-  letter-spacing: normal; /* Adjust as needed */
-  margin: 0;
-  padding: 0;
-}
-.butt{
-  
-  justify-content: center; 
-  align-items: center;
-  
-}
-.featureheading{
-  font-size: 1.8rem;
-  line-height: normal; 
-}
-.service-icon {
-  max-height: 50px;
-  max-width: 50px;
-}
-.service-title {
-  font-size: 1.2rem; 
-}
-.service-desc {
-  margin: 5px 0 0;
-  font-size: 0.9rem;
-  color:#303237;
-  font-weight: 400;
-}
-.banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.banner-content {
-  max-width: 100%;  
-}
-.banner-image {
-  width: 100%; 
-}
-.banner-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0;
-  line-height: normal;
-}
 
-.homesec{
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    
-}
-}
-
-@media (max-width:390px) {
-  
-  .stats {
-    flex-direction: column; /* Stack stats vertically on smaller screens */
-    align-items: center; /* Center align items for better readability */
-    margin-top: 1em; /* Adjust spacing as needed */
-  }
-  .stats-section{
-    margin-top: 40vh;
-    
-  }
-  .stat h1 {
-    font-size: 2.4rem; /* Adjusted to match your inline styles */
-    font-weight: 900;
-    color:#FD6500;
-    margin: 0;
-    padding: 0;
-    
-  }
-  .stat p {
-    font-size: 1rem; /* Adjusted to match your inline styles */
-    font-weight: 500;
-    letter-spacing: normal; /* Adjust as needed */
-    margin: 0;
-    padding: 0;
-  }
-  .butt{
-    
-    justify-content: center; 
-    align-items: center;
-    
-  }
-  .featureheading{
-    font-size: 1.8rem;
-    line-height: normal; 
-  }
-  .service-icon {
-    max-height: 40px;
-    max-width: 40px;
-  }
-  .service-title {
-    font-size: 1.2rem; 
-  }
-  .service-desc {
-    margin: 5px 0 0;
-    font-size: 0.9rem;
-    color:#303237;
-    font-weight: 400;
-  }
-
-  .homesec{
-    height: 100vh; /* Full height of the viewport */
-      display: flex;
-      flex-direction: row; /* Stack children vertically */
-      align-items: center; /* Center items vertically */
-      justify-content: space-between;
-  }
-  }
   
   @media (max-width:913px) {
     .homesec{
@@ -467,6 +292,9 @@ backdrop-filter: blur(20px);
     }
     h2.subhead {
     font-size: 1.3rem;
+    }
+    .stats-section{
+      margin-top: 20vh;
     }
     .stat h1 {
       font-size: 1.8rem; /* Adjusted to match your inline styles */
@@ -501,16 +329,7 @@ backdrop-filter: blur(20px);
     margin-bottom: 10vh; /* Bottom margin of 10% of the viewport height */
     text-align: center;
   }
-  .flip-card-front{
-    position: absolute;
-    width: 80%;
-    height: 80%;
-  }
-  .flip-card-back{
-    position: absolute;
-    width: 80%;
-    height: 80%;
-  }
+  
   .banner {
     display: flex;
     flex-direction: column;
@@ -524,8 +343,177 @@ backdrop-filter: blur(20px);
     width: 100%; 
   }
   }
-  @media (max-width:320px) {
-    .stats-section{
-      margin-top: 60vh;
+
+  @media (max-width:600px) {
+    .main {
+      margin: auto auto auto;
+    }
+    h1.getready {
+      line-height: normal; 
+      font-size: 2rem;
+    }
+    .flip-card-inner{
+      animation: flip 5s alternate-reverse infinite;
+      animation-delay: 3s;
+    }
+    .info1, .info{
+      display: none;
     }
   }
+  .flip-card-front, .flip-card-back{
+    backface-visibility: hidden;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card:hover .info, .flip-card:hover .info1 {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .flip-card:hover .flip-card-back .info, .flip-card:hover .flip-card-back .info1 {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes flip {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
+
+  @media (max-width:600px) {
+    /* .stats-section{
+      margin-top: 80vh;
+    } */
+    .stats {
+      flex-direction: column; /* Stack stats vertically on smaller screens */
+      align-items: center; /* Center align items for better readability */
+      margin-top: 1em; /* Adjust spacing as needed */
+    }
+    .stat {
+      line-height: 3.8rem; /* Example line height */
+    }
+    .stat h1 {
+      font-size: 3rem; /* Adjusted to match your inline styles */
+      font-weight: 900;
+      color:#FD6500;
+      
+      
+    }
+    .stat p {
+      font-size: 1rem; /* Adjusted to match your inline styles */
+      font-weight: 600;
+      letter-spacing: normal; /* Adjust as needed */
+      margin: 0;
+      padding: 0;
+    }
+    .butt{
+      
+      justify-content: center; 
+      align-items: center;
+      
+    }
+    .featureheading{
+      font-size: 1.8rem;
+      line-height: normal; 
+    }
+    .service-icon {
+      max-height: 50px;
+      max-width: 50px;
+    }
+    .service-title {
+      font-size: 1.2rem; 
+    }
+    .service-desc {
+      margin: 5px 0 0;
+      font-size: 0.9rem;
+      color:#303237;
+      font-weight: 400;
+    }
+    .banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .banner-content {
+      max-width: 100%;  
+    }
+    .banner-image {
+      width: 100%; 
+    }
+    .banner-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0;
+      line-height: normal;
+    }
+    
+    .homesec{
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        
+    }
+    }
+    
+    @media (max-width:390px) {
+      
+      .stats {
+        flex-direction: column; /* Stack stats vertically on smaller screens */
+        align-items: center; /* Center align items for better readability */
+        margin-top: 1em; /* Adjust spacing as needed */
+      }
+      .stats-section{
+        margin-top: 30vh;
+        
+      }
+      .stat h1 {
+        font-size: 2.4rem; /* Adjusted to match your inline styles */
+        font-weight: 900;
+        color:#FD6500;
+        margin: 0;
+        padding: 0;
+        
+      }
+      .stat p {
+        font-size: 1rem; /* Adjusted to match your inline styles */
+        font-weight: 500;
+        letter-spacing: normal; /* Adjust as needed */
+        margin: 0;
+        padding: 0;
+      }
+      .butt{
+        
+        justify-content: center; 
+        align-items: center;
+        
+      }
+      .featureheading{
+        font-size: 1.8rem;
+        line-height: normal; 
+      }
+      .service-icon {
+        max-height: 40px;
+        max-width: 40px;
+      }
+      .service-title {
+        font-size: 1.2rem; 
+      }
+      .service-desc {
+        margin: 5px 0 0;
+        font-size: 0.9rem;
+        color:#303237;
+        font-weight: 400;
+      }
+    
+     
+      }
+  
+  
