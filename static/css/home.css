@@ -501,7 +501,12 @@ backdrop-filter: blur(20px);
     margin-bottom: 10vh; /* Bottom margin of 10% of the viewport height */
     text-align: center;
   }
-  .flip-card-front, .flip-card-back{
+  .flip-card-front{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+  }
+  .flip-card-back{
     position: absolute;
     width: 80%;
     height: 80%;
