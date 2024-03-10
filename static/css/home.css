@@ -118,7 +118,10 @@ h2.subhead {
     min-height: 25px;
     min-width: 25px;
 }
-
+.image {
+  
+  height: 100vh;
+}
 .service-content {
   display: flex;
   flex-direction: column;
@@ -176,7 +179,11 @@ h2.subhead {
 }
 /* flip card css */
 
-
+.flip-card-front, .flip-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 .flip-card-inner{
   transform-style: preserve-3d;
   transition: transform 1s;
@@ -189,7 +196,7 @@ h2.subhead {
   }
   h1.getready {
     line-height: normal; 
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .flip-card-inner{
     animation: flip 5s alternate-reverse infinite;
@@ -308,7 +315,7 @@ backdrop-filter: blur(20px);
 
 @media (max-width:600px) {
 .stats-section{
-  margin-top: 40vh;
+  margin-top: 10vh;
   
 }
 .stats {
@@ -389,7 +396,10 @@ backdrop-filter: blur(20px);
     align-items: center; /* Center align items for better readability */
     margin-top: 1em; /* Adjust spacing as needed */
   }
-  
+  .stats-section{
+    margin-top: 30vh;
+    
+  }
   .stat h1 {
     font-size: 2.4rem; /* Adjusted to match your inline styles */
     font-weight: 900;
@@ -447,7 +457,11 @@ backdrop-filter: blur(20px);
     }
     h1.getready {
       line-height: normal; 
-      font-size: 3rem;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    h2.subhead {
+    font-size: 1.3rem;
     }
     .stat h1 {
       font-size: 1.8rem; /* Adjusted to match your inline styles */
@@ -456,10 +470,10 @@ backdrop-filter: blur(20px);
       margin: 0;
       padding: 0; 
     }
-    /* .stats-section{
-      margin-top: 30vh;
-      
-    } */
+   
+    .image {
+      height: 60vh; /* Height for medium-sized screens and above */
+    }
     .servicecontainer {
       margin-top: 2vh; /* Top margin of 2% of the viewport height */
       display: flex; /* Enable flexbox */
@@ -480,5 +494,16 @@ backdrop-filter: blur(20px);
     width: 100%; /* Full width of the parent */
     margin-top: 10vh; /* Top margin of 10% of the viewport height */
     margin-bottom: 10vh; /* Bottom margin of 10% of the viewport height */
+    text-align: center;
   }
+  .flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+  }
+  }
+  @media (max-width:320px) {
+    .stats-section{
+      margin-top: 60vh;
+    }
   }

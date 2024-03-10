@@ -116,6 +116,9 @@
     margin-top: -80px;
     width: 280px;
   }
+  .heading{
+    line-height: normal;
+  }
 }
 
 /* teams */
