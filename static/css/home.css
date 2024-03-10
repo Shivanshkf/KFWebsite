@@ -179,7 +179,12 @@ h2.subhead {
 }
 /* flip card css */
 
-.flip-card-front, .flip-card-back{
+.flip-card-front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.flip-card-back{
   position: absolute;
   width: 100%;
   height: 100%;
