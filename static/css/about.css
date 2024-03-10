@@ -12,7 +12,7 @@
   font-family: 'Inter';
   font-weight: 400;
   margin-bottom: 5rem;
-  text-align: justify;
+  /*  */
 }
 
 
@@ -45,9 +45,7 @@
   color: #303237;
   padding-top: 10px;
 }
-.left p {
-  text-align: justify;
-}
+
 .vision1 p {
   text-align: center;
 }
