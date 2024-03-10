@@ -132,7 +132,7 @@
     opacity: 1;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .top-nav-box {
     height: 6rem;
   }
