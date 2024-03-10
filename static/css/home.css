@@ -512,8 +512,13 @@ backdrop-filter: blur(20px);
         color:#303237;
         font-weight: 400;
       }
-    
-     
+      }
+
+      @media (max-width:320px) {
+        .stats-section{
+          margin-top: 50vh;
+          
+        }
       }
   
   
