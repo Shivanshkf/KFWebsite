@@ -1,0 +1,93 @@
+.business{
+    margin-top: 10rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.image-wrapper {
+    max-width: 100%; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    border-radius: 20px; /* For rounded corners */
+}
+
+.text-content {
+    max-width: 800px; /* Adjust as needed */
+}
+
+.planh1{
+    color: #000; /* Adjust to your preferred color */
+    font-size: 3rem;
+    font-family: 'Inter';
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.planp {
+    font-size: 1rem; /* Adjust to match your design */
+    color: #555; /* Adjust to your preferred color */
+    font-family: 'Inter';
+}
+.content-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.content-image img {
+    width: 100%; /* Adjust based on your actual image size and container */
+     /* Adjust to fit your design */
+    border-radius: 20px; /* Optional: For rounded corners */
+}
+
+.content-text {
+    margin-left: 3rem;
+    max-width: 600px; /* Adjust to fit your design */
+}
+
+.planh2 {
+    color: #000000; /* Example color; adjust to fit your design */
+    font-family: 'Inter';
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.lastp {
+    text-align: justify;
+    font-size: 1rem; /* Adjust to match your design */
+    color: #000000; /* Adjust to your preferred color */
+    font-family: 'Inter'; 
+    font-weight: 600;  
+}
+
+.content-blockrev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.content-textrev{
+    margin-right: 3rem;
+    max-width: 600px; 
+}
+
+.lastsec{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
