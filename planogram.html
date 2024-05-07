@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="At Kirana Friends, we help Kirana store owners by Providing them access to the knowledge and know-how of running a Kirana store Opening Access to overall Kirana Ecosystem of Suppliers and Vendors">
+    <meta name="keywords" content="Kirana, grocery, dairy, sales, shelf, mumbai">
+    <meta name="author" content="Kirana Friends">
+
+
+    <link rel="shortcut icon" href="static/assets/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/calculator.css">
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+    <link rel="stylesheet preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/planogram.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Font Google -->
+
+    <title>Planogram</title>
+</head>
+
+<body>
+    <!-- Navbar starts -->
+    <div class="top-nav">
+        <div class='top-nav-box'>
+            <div class="Kirana-logo">
+                <a href="index.html" rel="noopener noreferrer" target="_self" title="Kirana Friends">
+                    <img class="logo" src="static/assets/logo.png" alt="">
+                </a>
+            </div>
+            <div class="sub-nav">
+                <ol class='nav-items'>
+                    <li class='nav-item'>
+                        <a href="index.html" rel="noopener noreferrer" target="_self">Home</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href="about.html" rel="noopener noreferrer" target="_self">About Us</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href="https://kiranafriends.com/blog" rel="noopener noreferrer" target="_self">Blog</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href="calculators.html" rel="noopener noreferrer" target="_self">Calculators</a>
+                    </li>
+                    <!-- <li class='nav-item'>
+                        <a href="https://misraji.kiranafriends.com/" rel="noopener noreferrer" target="_self">Ask
+                            Misraji</a>
+                    </li> -->
+                    <li class='nav-item'>
+                        <a href="contact.html" rel="noopener noreferrer" target="_self">Contact Us</a>
+                    </li>
+                </ol>
+            </div>
+            <div class='right-nav'>
+                <ol class='nav-items'>
+                    <li class='nav-item box-nav'>
+                        <a href="https://play.google.com/store/apps/details?id=com.kiranafriend.android&hl=en_IN&gl=US">
+                            <img class="w-[10vh] lg:w-[20vh] mr-[2vh] my-[2vh]" src="static/assets/playstore.webp"
+                                alt="playstore" />
+                        </a>
+                    </li>
+                </ol>
+            </div>
+            <div class="hamburger">
+                <div id="menu-icon" onclick='openNav()'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='wrapper'>
+        <div class="sidebar" id="sidenav">
+            <div class="side-cross" onclick='openNav()'>
+                &times;
+            </div>
+            <div class="sidebar-link-container">
+                <ol id="links-sidebar">
+                    <li class="nav-links-sidebar ">
+                        <a href="index.html" rel="noopener noreferrer" target="_self">Home</a>
+                    </li>
+
+                    <li class="nav-links-sidebar ">
+                        <a href="about.html" rel="noopener noreferrer" target="_self">About Us</a>
+                    </li>
+                    <li class="nav-links-sidebar ">
+                        <a href="https://kiranafriends.com/blog" rel="noopener noreferrer" target="_self">Blog</a>
+                    </li>
+                    <li class="nav-links-sidebar active">
+                        <a href="calculators.html" rel="noopener noreferrer" target="_self">Calculators</a>
+                    </li>
+                    <!-- <li class="nav-links-sidebar ">
+                        <a href="https://misraji.kiranafriends.com/" rel="noopener noreferrer" target="_self">Ask
+                            Misraji</a>
+                    </li> -->
+                    <li class="nav-links-sidebar ">
+                        <a href="contact.html" rel="noopener noreferrer" target="_self">Contact Us</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- Navbar ends here -->
+        <section class="banner" data-scroll-index='0'>
+            <div class="banner-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12">
+                            <div class="banner-text">
+                                <h2 class="white">Planogram - Optimise Your Store Space with Kirana Friends</h2>
+                                <h6 class="white">Maximise your earnings by utilising your store space effectively.
+                                </h6>
+                                <p class="banner-text white">For instance, if you look at an IKEA store, they are
+                                    strategically planned. The stores feature a distinctive large blue and yellow design
+                                    with few windows, and a one-way layout that encourages customers to pass over the
+                                    entire
+                                    store, a method IKEA calls "the long natural way." This design is intended to
+                                    maximise
+                                    customers’ exposure to the store's products. The store's restaurant is also
+                                    strategically placed to offer customers a break and increase their spending as they
+                                    shop.
+                                </p>
+                                <ul>
+                                    <!-- <li><a href="#"><img src="images/appstore.png" class="wow fadeInUp"
+                                            data-wow-delay="0.4s" /></a></li>
+                                <li><a href="#"><img src="images/playstore.png" class="wow fadeInUp"
+                                            data-wow-delay="0.7s" /></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-8"> <img src="static/assets/iphone-screen.png"
+                                class="img-fluid wow fadeInUp" /> </div>
+                    </div>
+                </div>
+            </div>
+            <span class="svg-wave"> <img class="svg-hero" src="static/assets/applight-wave.svg"> </span>
+        </section>
+        <!-------FAQ Start------->
+        <section class="faq section-padding prelative" data-scroll-index='5'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sectioner-header text-center">
+                            <h3>Frequently Asked Questions</h3>
+                            <span class="line"></span>
+                            <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet
+                                lorem faucibus, vestibulum ante in, pharetra ante.</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+                                    <h4>What is a Planogram? </h4>
+                                    <p>A planogram is a science that:
+                                        Details the arranging of the right products in the right place within your store
+                                        layout
+                                        Enables cross-selling and upselling of products, leading to increased sales and
+                                        profits
+                                    </p>
+                                </div>
+                                <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+                                    <h4>What Our planogram service includes?</h4>
+                                    <p>
+                                    <ul>
+                                        <li>Analysing the current planogram of the store</li>
+                                        <li>Creating strategic planograms based on the store layout and customer
+                                            preferences</li>
+                                        <li>Enhancing product visibility</li>
+                                        <li>Improving the organisation of products on shelves</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+                                    <h4>Why should you choose our Planogram for Retail Store Service?
+                                    </h4>
+                                    <p>Our planogram service offers numerous benefits:
+                                        Increase in Sales: Properly placed products in the store make it easier for
+                                        customers to find what they're looking for, leading them to purchase more.
+                                        Better Customer Experience: An organised store provides a better shopping
+                                        experience, making customers want to return.
+                                        Efficient Store Management: Our planogram helps you manage inventory and
+                                        restocking more effectively, making your operations smoother.
+
+                                    </p>
+                                </div>
+                                <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+                                    <h4>How are Planograms implemented in retail?
+                                    </h4>
+                                    <p>We conduct a thorough analysis of your store and develop a plan that considers
+                                        both your customers' needs and your own.
+                                        We arrange your products and displays in a way that makes them more impactful
+                                        and easier for customers to find.
+                                        We also train your staff to manage the new setup effectively.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------FAQ End------->
+        <!-------Download End------->
+        <section class="download section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sectioner-header text-center white">
+                            <h3>Talk to Expert</h3>
+                            <span class="line"></span>
+                            <p class="white">Let our experts help you build the best retail digital transformation
+                                strategy. If you want to improve your store for higher earnings and a better customer
+                                experience, Kirana Friends is the right partner for you.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="section-content text-center">
+                            <a href="store-renovation-budget-calculator.html" class="about-btn1">Book a free
+                                Consultation</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- -------- -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <!-- scrollIt js -->
+        <script src="/KF Website/static/js/nav.js"></script>
+        <script src="/KF Website/static/js/scrollIt.min.js"></script>
+        <script src="/KF Website/static/js/wow.min.js"></script>
+        <script>
+            wow = new WOW();
+            wow.init();
+            $(document).ready(function (e) {
+
+                $('#video-icon').on('click', function (e) {
+                    e.preventDefault();
+                    $('.video-popup').css('display', 'flex');
+                    $('.iframe-src').slideDown();
+                });
+                $('.video-popup').on('click', function (e) {
+                    var $target = e.target.nodeName;
+                    var video_src = $(this).find('iframe').attr('src');
+                    if ($target != 'IFRAME') {
+                        $('.video-popup').fadeOut();
+                        $('.iframe-src').slideUp();
+                        $('.video-popup iframe').attr('src', " ");
+                        $('.video-popup iframe').attr('src', video_src);
+                    }
+                });
+
+                $('.slider').bxSlider({
+                    pager: false
+                });
+            });
+
+            $(window).on("scroll", function () {
+
+                var bodyScroll = $(window).scrollTop(),
+                    navbar = $(".navbar");
+
+                if (bodyScroll > 50) {
+                    $('.navbar-logo img').attr('src', 'images/logo-black.png');
+                    navbar.addClass("nav-scroll");
+
+                } else {
+                    $('.navbar-logo img').attr('src', 'images/logo.png');
+                    navbar.removeClass("nav-scroll");
+                }
+
+            });
+            $(window).on("load", function () {
+                var bodyScroll = $(window).scrollTop(),
+                    navbar = $(".navbar");
+
+                if (bodyScroll > 50) {
+                    $('.navbar-logo img').attr('src', 'images/logo-black.png');
+                    navbar.addClass("nav-scroll");
+                } else {
+                    $('.navbar-logo img').attr('src', 'images/logo-white.png');
+                    navbar.removeClass("nav-scroll");
+                }
+
+                $.scrollIt({
+
+                    easing: 'swing',      // the easing function for animation
+                    scrollTime: 900,       // how long (in ms) the animation takes
+                    activeClass: 'active', // class given to the active nav element
+                    onPageChange: null,    // function(pageIndex) that is called when page is changed
+                    topOffset: -63
+                });
+            });
+        </script>
+</body>
+
+</html>

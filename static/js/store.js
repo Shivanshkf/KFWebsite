@@ -18,15 +18,15 @@ function resetParticularsToDashes() {
 function calculateBudget() {
     var area = parseFloat(document.getElementById('area').value);
     if (!isNaN(area) && area > 0) {
-        var fixturesCost = 250 * area;
-        var fixturesBackOfficeCost = 30 * area; // This value was missing in the final display
-        var airConditioningCost = 200 * area;
-        var equipmentCost = 25 * area;
-        var electricalsCost = 150 * area;
-        var chillerFreezersCost = 160 * area;
-        var securityCost = 35 * area;
-        var itEquipmentsCost = 250 * area;
-        var signageCost = 100000; // Fixed cost
+        var fixturesCost = 275 * area;
+        var fixturesBackOfficeCost = 35 * area; // This value was missing in the final display
+        var airConditioningCost = 225 * area;
+        var equipmentCost = 30 * area;
+        var electricalsCost = 175 * area;
+        var chillerFreezersCost = 180 * area;
+        var securityCost = 45 * area;
+        var itEquipmentsCost = 300 * area;
+        var signageCost = 120000; // Fixed cost
 
         var totalCost = fixturesCost + fixturesBackOfficeCost + airConditioningCost + equipmentCost + electricalsCost + chillerFreezersCost + securityCost + itEquipmentsCost + signageCost;
 
